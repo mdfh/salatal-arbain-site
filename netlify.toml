@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[[plugins]]
+  package = "netlify-plugin-inline-functions-env"
+
+[plugins.inputs]
+  include = ["FIREBASE_ADMIN_SERVICE_ACCOUNT"]
