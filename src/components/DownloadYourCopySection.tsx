@@ -16,7 +16,7 @@ export default function DownloadYourCopySection() {
   const pdfHref = "/pdf/salawatal-arbain.pdf";
   const filename = "salawatal-arbain.pdf";
 
-  const PdfViewer = dynamic(() => import("@/lib/PdfViewer"), {
+  const ReactPdfViewer = dynamic(() => import("@/lib/ReactPdfViewer"), {
   ssr: false,
   loading: () => (
     <div className="rounded-3xl border border-white/10 bg-black/20 h-[560px] flex items-center justify-center text-white/70">
@@ -66,7 +66,7 @@ export default function DownloadYourCopySection() {
 
           {/* Right: PDF viewer */}
           <div className="w-full">
-            <PdfViewer
+            <ReactPdfViewer
               fileUrl={pdfHref}
               height={560}
               onDownload={onViewerDownload}

@@ -62,7 +62,7 @@ const variants = {
   }),
 };
 
-export default function PdfViewer({ fileUrl, startPage = 1, height = 620, onDownload,
+export default function ReactPdfViewer({ fileUrl, startPage = 1, height = 620, onDownload,
   downloadAriaLabel}: Props) {
   const [numPages, setNumPages] = useState(0);
   const [[currentPage, direction], setPageWithDirection] = useState([startPage, 0]);
