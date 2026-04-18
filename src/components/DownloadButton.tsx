@@ -3,8 +3,8 @@
 import { useEffect, useMemo, useState } from "react";
 import { useLang } from "@/components/LangProvider";
 import { track } from "@/lib/firebase";
-import { downloadFromStorage } from "@/lib/storageDownload"; // keep
-import { downloadFromPublic } from "@/lib/publicDownload";   // new
+import { downloadFromStorage } from "@/lib/storageDownload";
+import { downloadFromPublic } from "@/lib/publicDownload";
 import { incrementDownloadCount } from "@/lib/downloadCounter";
 import { ArrowRight, ShieldCheck, X } from "lucide-react";
 
@@ -33,20 +33,19 @@ export default function DownloadButton({
   const [captchaError, setCaptchaError] = useState<string | null>(null);
 
   const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
-  const captchaEnabled = Boolean(siteKey);
+  const captchaEnabled = false; //Boolean(siteKey);
 
   // --- Public files (Netlify/Next public folder) ---
-  // const publicHref = lang === "ur" ? "/pdf/Maarif-Al-Tajweed.pdf" : "/book-en.pdf";
-  const publicHref = "/pdf/Maarif-Al-Tajweed.pdf";
+  const publicHref = "/pdf/salawatal-arbain.pdf";
 
   // --- Firebase Storage paths (keep for later) ---
   const storagePath =
     lang === "ur"
-      ? "pdf/Maarif-Al-Tajweed_UR.pdf"
-      : "pdf/Maarif-Al-Tajweed_EN.pdf";
+      ? "pdf/salawatal-arbain.pdf"
+      : "pdf/salawatal-arbain.pdf";
 
   const filename =
-    lang === "ur" ? "Maarif-Al-Tajweed-Urdu.pdf" : "Maarif-Al-Tajweed-English.pdf";
+    lang === "ur" ? "salawatal-arbain.pdf" : "salawatal-arbain.pdf";
 
   const fileForCount = useMemo(
     () => (DOWNLOAD_MODE === "storage" ? storagePath : publicHref),
@@ -73,6 +72,7 @@ export default function DownloadButton({
     setLoading(true);
 
     try {
+      console.log("Downloading file: ", filename);
       // 1) Download
       if (DOWNLOAD_MODE === "storage") {
         await downloadFromStorage({ storagePath, filename });
@@ -93,6 +93,7 @@ export default function DownloadButton({
   };
 
   const onClick = async () => {
+    console.log('OnClick');
     if (loading) return;
 
     // If captcha is enabled, show gate first.

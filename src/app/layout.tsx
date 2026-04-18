@@ -22,28 +22,30 @@ const baskervville = Baskervville({
 
 export const metadata: Metadata = {
   title: {
-    default: "Ma`arif-ul-Tajweed – Learn Tajweed Easily",
-    template: "%s | Maarif-ul-Tajweed",
+    default: "Salatal Arbain – 40 Durood on Prophet Muhammad (ﷺ)",
+    template: "%s | Salatal Arbain",
   },
   description:
-    "Learn Tajweed with Ma`arif-ul-Tajweed. A clear, structured and easy-to-understand guide for proper Quran recitation.",
+    "Explore Salatal Arbain, a collection of 40 beautiful durood (salutations) upon Prophet Muhammad (ﷺ). A spiritual guide for daily recitation and blessings.",
   keywords: [
-    "Tajweed",
-    "Learn Tajweed",
-    "Quran Tajweed",
-    "Ma`arif ul Tajweed",
-    "Quran recitation rules",
+    "Salatal Arbain",
+    "40 Durood",
+    "Durood Sharif",
+    "Salawat on Prophet Muhammad",
+    "Islamic supplications",
+    "Darood collection",
   ],
-  authors: [{ name: "Ma`arif-ul-Tajweed" }],
-  creator: "Maarif-ul-Tajweed",
-  metadataBase: new URL("https://marif-ut-tajweed.netlify.app"),
+  authors: [{ name: "Salatal Arbain" }],
+  creator: "Salatal Arbain",
+  metadataBase: new URL("https://salatal-arbain.netlify.app"),
   openGraph: {
-    title: "Ma`arif-ul-Tajweed",
-    description: "A complete guide to learning Tajweed with clarity and correctness.",
-    url: "https://marif-ut-tajweed.netlify.app",
-    siteName: "Ma`arif-ul-Tajweed",
+    title: "Salatal Arbain",
+    description:
+      "A collection of 40 durood (salawat) upon Prophet Muhammad (ﷺ) for spiritual growth and blessings.",
+    url: "https://salatal-arbain.netlify.app",
+    siteName: "Salatal Arbain",
     images: [
-      { url: "/og-image.png", width: 1200, height: 630, alt: "Ma`arif-ul-Tajweed" },
+      { url: "/og-image.png", width: 1200, height: 630, alt: "Salatal Arbain" },
     ],
     locale: "en_US",
     type: "website",
@@ -51,8 +53,9 @@ export const metadata: Metadata = {
   icons: { icon: "/favicon.svg" },
   twitter: {
     card: "summary_large_image",
-    title: "Maarif-ul-Tajweed",
-    description: "Learn Tajweed the right way with Maarif-ul-Tajweed.",
+    title: "Salatal Arbain",
+    description:
+      "Read and reflect on 40 durood (salawat) upon Prophet Muhammad (ﷺ).",
     images: ["/og-image.png"],
   },
 };
