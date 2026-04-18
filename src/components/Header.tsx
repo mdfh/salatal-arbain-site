@@ -34,12 +34,9 @@ export default function Header() {
   };
 
   const items = [
-    { href: "#preface", label: "Preface / عرضِ مصنف" },
-    { href: "#contents", label: "Contents / فہرست" },
-    { href: "#between-pages", label: "Between the Pages / صفحات کے درمیان" },
     { href: "#about-author", label: "About the Author / تعارفِ مصنف" },
     { href: "#get-your-copy", label: "Get Your Copy / کتاب ڈاؤن لوڈ کریں" },
-    { href: "#contact", label: "Contact Us / رابطہ کریں" },
+    { href: "#contents", label: "Contents / فہرست" },
   ];
 
   return (

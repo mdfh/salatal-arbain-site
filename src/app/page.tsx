@@ -6,9 +6,10 @@ import { track } from "@/lib/firebase";
 import Header from "@/components/Header";
 import BookCover from "@/components/BookCover";
 import Footer from "@/components/Footer";
-import DownloadYourCopySection from "@/components/DownloadYourCopySection";
 import ContactUsSection from "@/components/ContactUsSection";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
+import AboutAuthorSection from "@/components/AboutAuthorSection";
+import DownloadYourCopySection from "@/components/DownloadYourCopySection";
 
 
 export default function Page() {
@@ -23,6 +24,7 @@ export default function Page() {
       <Header />
       <ScrollToTopButton />
       <BookCover />
+      <AboutAuthorSection />
       <DownloadYourCopySection />
       <ContactUsSection />
       <Footer />

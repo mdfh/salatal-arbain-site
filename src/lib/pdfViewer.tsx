@@ -19,7 +19,12 @@ type Props = {
   fileUrl: string;
   startPage?: number;
   height?: number;
+
+  onDownload?: () => void | Promise<void>;
+  downloadAriaLabel?: string;
+  direction?: "ltr" | "rtl";
 };
+
 
 // Physics settings for that "snappy yet organic" feel
 const transitionConfig: Transition = {
@@ -57,7 +62,8 @@ const variants = {
   }),
 };
 
-export default function PdfViewer({ fileUrl, startPage = 1, height = 620 }: Props) {
+export default function PdfViewer({ fileUrl, startPage = 1, height = 620, onDownload,
+  downloadAriaLabel}: Props) {
   const [numPages, setNumPages] = useState(0);
   const [[currentPage, direction], setPageWithDirection] = useState([startPage, 0]);
 
@@ -104,7 +110,8 @@ export default function PdfViewer({ fileUrl, startPage = 1, height = 620 }: Prop
       : 1;
 
   return (
-    <div
+    <div dir="rtl">
+      <div
       ref={rootRef}
       className={`relative flex flex-col transition-colors duration-700 overflow-hidden ${
         isFullscreen ? "fixed inset-0 z-50" : "rounded-3xl border shadow-2xl"
@@ -138,18 +145,34 @@ export default function PdfViewer({ fileUrl, startPage = 1, height = 620 }: Prop
     <Maximize size={16} />
   </button>
 
-  <a
-    href={fileUrl}
-    download
-    className="p-2 rounded-xl transition-all shadow-lg"
-    style={{
-      backgroundColor: THEME.gold,
-      color: "#1a1203",
-      boxShadow: "0 10px 25px rgba(245, 194, 75, 0.25)",
-    }}
-  >
-    <Download size={16} />
-  </a>
+  {typeof onDownload === "function" ? (
+    <button
+      type="button"
+      aria-label={downloadAriaLabel ?? "Download PDF"}
+      onClick={onDownload}
+      className="p-2 rounded-xl transition-all shadow-lg"
+      style={{
+        backgroundColor: THEME.gold,
+        color: "#1a1203",
+        boxShadow: "0 10px 25px rgba(245, 194, 75, 0.25)",
+      }}
+    >
+      <Download size={16} />
+    </button>
+  ) : (
+    <a
+      href={fileUrl}
+      download
+      className="p-2 rounded-xl transition-all shadow-lg"
+      style={{
+        backgroundColor: THEME.gold,
+        color: "#1a1203",
+        boxShadow: "0 10px 25px rgba(245, 194, 75, 0.25)",
+      }}
+    >
+      <Download size={16} />
+    </a>
+  )}
 </div>
 
 
@@ -242,5 +265,6 @@ export default function PdfViewer({ fileUrl, startPage = 1, height = 620 }: Prop
         />
       </div>
     </div>
-  );
+    </div>
+    );
 }
