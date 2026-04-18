@@ -55,7 +55,7 @@ const variants = {
     zIndex: 1,
   },
   exit: (direction: number) => ({
-    x: direction < 0 ? "50%" : "-50%", // Subtle parallax exit
+    x: direction < 0 ? "50%" : "-50%",
     scale: 0.95,
     opacity: 0,
     zIndex: 0,
