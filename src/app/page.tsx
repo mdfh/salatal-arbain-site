@@ -10,6 +10,7 @@ import ContactUsSection from "@/components/ContactUsSection";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import AboutAuthorSection from "@/components/AboutAuthorSection";
 import DownloadYourCopySection from "@/components/DownloadYourCopySection";
+import PresenterTextSection from "@/components/PresenterTextSection";
 
 
 export default function Page() {
@@ -24,8 +25,8 @@ export default function Page() {
       <Header />
       <ScrollToTopButton />
       <BookCover />
+      <PresenterTextSection />
       <AboutAuthorSection />
-      <DownloadYourCopySection />
       <ContactUsSection />
       <Footer />
     </div>

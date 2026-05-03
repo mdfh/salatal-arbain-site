@@ -16,6 +16,7 @@ type DownloadButtonProps = {
 
 // Switch mode here (or make it env-based)
 type DownloadMode = "public" | "storage";
+const internetArchiveHref = "https://archive.org/details/MiladNamaHazratSyedAbdullahShahNaqshbandiQuadriRh";
 const DOWNLOAD_MODE: DownloadMode =
   (process.env.NEXT_PUBLIC_DOWNLOAD_MODE as DownloadMode) ?? "public";
 
@@ -68,29 +69,25 @@ export default function DownloadButton({
   };
 
   const startDownload = async () => {
-    if (loading) return;
-    setLoading(true);
 
-    try {
-      console.log("Downloading file: ", filename);
-      // 1) Download
-      if (DOWNLOAD_MODE === "storage") {
-        await downloadFromStorage({ storagePath, filename });
-      } else {
-        await downloadFromPublic({ href: publicHref, filename });
-      }
+  try {
+    window.open(internetArchiveHref, "_blank", "noopener,noreferrer");
 
-      // 2) Track analytics + increment counter (only after successful download)
-      track("pdf_download_success", { lang, mode: DOWNLOAD_MODE, file: fileForCount });
-      incrementDownloadCount({ lang, file: fileForCount });
-      onSuccess?.();
-    } catch (e) {
-      track("pdf_download_failed", { lang, mode: DOWNLOAD_MODE, file: fileForCount });
-      alert(lang === "ur" ? "ڈاؤن لوڈ ناکام ہوگیا" : "Download failed");
-    } finally {
-      setLoading(false);
-    }
-  };
+    track("internet_archive_open_success", {
+      lang,
+      file: internetArchiveHref,
+    });
+
+    onSuccess?.();
+  } catch (e) {
+    track("internet_archive_open_failed", {
+      lang,
+      file: internetArchiveHref,
+    });
+
+    alert(lang === "ur" ? "لنک نہیں کھل سکا" : "Could not open link");
+  }
+};
 
   const onClick = async () => {
     console.log('OnClick');
@@ -141,7 +138,7 @@ export default function DownloadButton({
       <button
         onClick={onClick}
         className={
-          "rounded-xl bg-[#66DE78] px-5 py-2.5 text-sm font-semibold text-black disabled:opacity-60 " +
+          "rounded-xl bg-[#f5c24b] px-5 py-2.5 text-sm font-semibold text-black disabled:opacity-60 " +
           (className ?? "")
         }
         disabled={loading}

@@ -41,7 +41,7 @@ export default function DownloadYourCopySection() {
 
   return (
     <section id="get-your-copy" className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#2C5F34] to-[#27552E]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#005c31] to-[#005c31]" />
       <div className="relative mx-auto max-w-6xl px-4 py-16 lg:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left: existing UI */}

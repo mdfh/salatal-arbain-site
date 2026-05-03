@@ -66,7 +66,7 @@ export default function ContactUsSection() {
   };
 
   return (
-    <section id="contact" className="scroll-mt-24">
+    <section id="contact-us" className="scroll-mt-24">
       <div className="bg-[#171112] py-14 font-en">
         <div className="mx-auto max-w-5xl px-4">
           <div className="text-center">
@@ -118,7 +118,7 @@ export default function ContactUsSection() {
               <button
                 type="submit"
                 disabled={status.kind === "submitting"}
-                className="w-full rounded-md bg-[#66DE78] py-4 text-sm font-semibold tracking-widest text-black hover:opacity-95 transition disabled:opacity-60"
+                className="w-full rounded-md bg-[#f5c24b] py-4 text-sm font-semibold tracking-widest text-black hover:opacity-95 transition disabled:opacity-60"
               >
                 {status.kind === "submitting" ? "SENDING…" : "SEND"}
               </button>

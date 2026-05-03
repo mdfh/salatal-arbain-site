@@ -9,7 +9,7 @@ export default function Footer() {
 
   return (
     <footer>
-      <div className="w-full bg-gradient-to-b from-[#2C5F34] to-[#1B3B20]">
+      <div className="w-full bg-gradient-to-b from-[#005c31] to-[#005c31]">
         <div className="mx-auto max-w-6xl px-4 py-16 text-center">
           <p className="text-white/90 text-2xl md:text-3xl font-medium tracking-wide font-en">
             Salatal Arbain

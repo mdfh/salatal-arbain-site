@@ -23,7 +23,7 @@ export default function AboutAuthorSection() {
             {/* English (left) */}
             <div className="order-2 lg:order-1 p-8 lg:p-10">
               <p className="mt-4 text-4xl md:text-4xl font-en tracking-tight text-black/85">
-                ABOUT THE AUTHOR
+                INTRODUCTION
               </p>
               <p className="mt-5 text-base leading-relaxed text-black/70 font-en">
                 Its author is Shaykh al Sayyid Muhammad bin ‘Alawi-al Maliki al-Hasani al-Makki.
@@ -46,7 +46,7 @@ export default function AboutAuthorSection() {
                 dir="rtl"
                 className="mt-5 text-3xl md:text-5xl text-black/70 font-urdu font-normal"
               >
-                تعارفِ مصنف
+                تعارف
               </p>
               <p
                 dir="rtl"

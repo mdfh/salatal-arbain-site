@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function BookCover() {
   return (
-    <section className="w-full bg-[#2C5F34]">
+    <section className="w-full bg-[#005c31]">
       <div className="mx-auto max-w-6xl px-4">
         <Image
           src="/cover-bg-full.png"
