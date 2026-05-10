@@ -26,11 +26,10 @@ export default function AboutAuthorSection() {
                 INTRODUCTION
               </p>
               <p className="mt-5 text-base leading-relaxed text-black/70 font-en">
-                Its author is Shaykh al Sayyid Muhammad bin ‘Alawi-al Maliki al-Hasani al-Makki.
+                This book comprises of Durood  derived from the work Shawāriq al-Anwār authored by Shaykh al-Sayyid Muhammad ibn ʿAlawī al-Mālikī al-Ḥasanī
               </p>
               <p className="mt-5 text-base leading-relaxed text-black/70 font-en">
-                This humble servant has presented this compilation along with its translation as a modest effort, with the aim that readers may become fully acquainted with the meanings and messages of these priceless blessings, so that their hearts may be filled with the remembrance of the Messenger of Allah ﷺ and illuminated with love for him.
-              </p>
+                This humble servant has presented this compilation along with its translation as a modest effort, with the aim that readers may become fully acquainted with the meanings and messages of these priceless blessings, so that their hearts may be filled with the remembrance of the Rasoolallah ﷺ and illuminated with love for Him ﷺ .</p>
               <p className="mt-5 text-base leading-relaxed text-black/70 font-en">
                 Every blessed invocation (Durood) included in this book has been part of the daily spiritual practices of the servants of the noble saints and the great descendants of the Prophet ﷺ. By reciting them, one attains not only spiritual peace and closeness to Allah, but also ease and relief in worldly difficulties.
               </p>
@@ -52,28 +51,31 @@ export default function AboutAuthorSection() {
                 dir="rtl"
                 className="mt-5 text-base leading-relaxed text-black/70 text-right font-urdu-p font-normal"
               >
-                اس کے مصنف شیخ السید محمد بن علوی المالکی الحسنی المکی ہیں۔
+یہ  درود کا مجموعہ ، شیخ السید محمد بن علوی المالکی الحسنی الملکی کی کتاب شوارق الانوار سے اقز کردہ درودوں پر مشتمل ہے۔  
+
               </p>
 
               <p
                 dir="rtl"
                 className="mt-5 text-base leading-relaxed text-black/70 text-right font-urdu-p font-normal"
               >
-                اس عاجز بندے نے اس مجموعے کو اس کے ترجمے کے ساتھ ایک ادنیٰ کوشش کے طور پر پیش کیا ہے، تاکہ قارئین ان قیمتی درود و برکات کے معانی اور پیغامات سے پوری طرح واقف ہو جائیں، اور ان کے دل اللہ کے رسول ﷺ کی یاد سے معمور ہوں اور آپ ﷺ کی محبت سے منور ہو جائیں۔
+اِس عاجز بندے نے اِس مجموعے کو اُس کے ترجمے کے ساتھ ایک ادنیٰ کوشش کے طور پر پیش کیا ہے، تاکہ قارئین ان قیمتی درود و برکات کے معانی اور پیغامات سے پوری طرح واقف ہو جائیں، اور ان کے دل اللہ کے رسول ﷺ کی یاد سے معمور ہوں اور آپ ﷺ کی محبت سے منور ہو جائیں۔
+
               </p>
 
               <p
                 dir="rtl"
                 className="mt-5 text-base leading-[2.2] text-black/70 text-right font-urdu-p font-normal"
               >
-                اس کتاب میں شامل ہر بابرکت درود ان صالحین، اولیائے کرام اور نبی کریم ﷺ کی عظیم اولاد کے روزانہ کے روحانی معمولات کا حصہ رہا ہے۔ ان کی تلاوت سے انسان نہ صرف روحانی سکون اور اللہ تعالیٰ کا قرب حاصل کرتا ہے بلکہ دنیاوی مشکلات میں آسانی اور راحت بھی پاتا ہے۔
+اس کتاب میں شامل ہر بابرکت درود ان صالحین، اولیائے کرام اور نبی کریم ﷺ کی عظیم اولاد کے روزانہ کے روحانی معمولات کا حصہ رہا ہے۔ ان کی تلاوت سے انسان نہ صرف روحانی سکون اور اللہ تعالیٰ کا قرب حاصل کرتا ہے بلکہ دنیاوی مشکلات میں آسانی اور راحت بھی پاتا ہے۔
+
               </p>
 
               <p
                 dir="rtl"
                 className="mt-5 text-base leading-[2.2] text-black/70 text-right font-urdu-p font-normal"
               >
-                یہ مجموعہ اس بنیادی مقصد کے ساتھ مرتب کیا گیا ہے کہ ان قیمتی درودوں کو ایک جگہ جمع کر دیا جائے تاکہ ہر مسلمان آسانی کے ساتھ ان سے فائدہ اٹھا سکے۔ یہ مجموعہ اس پختہ یقین کے ساتھ مرتب کیا گیا ہے کہ اس میں شامل ہر درود پڑھنے والے کے لیے بخشش کا ذریعہ اور اللہ تعالیٰ کی رحمت حاصل کرنے کا سبب بنے گا۔
+یہ مجموعہ اس بنیادی مقصد کے ساتھ مرتب کیا گیا ہے کہ ان قیمتی درودوں کو ایک جگہ جمع کر دیا جائے تاکہ ہر مسلمان آسانی کے ساتھ ان سے فائدہ اٹھا سکے۔ یہ مجموعہ اس پختہ یقین کے ساتھ مرتب کیا گیا ہے کہ اس میں شامل ہر درود پڑھنے والے کے لیے بخشش کا ذریعہ اور اللہ تعالیٰ کی رحمت حاصل کرنے کا سبب بنے گا۔
               </p>
             </div>
           </div>
