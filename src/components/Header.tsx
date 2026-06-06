@@ -28,11 +28,10 @@ export default function Header() {
     };
   }, [menuOpen]);
 
-  const onSuccessfulDownload = () => {};
-
   const items = [
     { href: "#book-presenter", label: "BOOK PRESENTER / کتاب پیش کار" },
     { href: "#about-author", label: "INTRODUCTION / تعارف" },
+    { href: "#get-your-copy", label: "GET YOUR COPY / کتاب ڈاؤن لوڈ کریں" },
     { href: "#contact-us", label: "CONTACT US / رابطہ کریں" },
   ];
 
@@ -41,11 +40,12 @@ export default function Header() {
       <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between gap-4">
         {/* Left: Download + count */}
         <div className="flex flex-col items-start">
-          <DownloadButton
-            onSuccess={onSuccessfulDownload}
-            label={lang === "ur" ? "ڈاؤن لوڈ کریں / Download" : "Download / ڈاؤن لوڈ کریں"}
-            className="border border-black/10 hover:opacity-90 transition"
-          />
+          <a
+            href="#get-your-copy"
+            className="rounded-full bg-[#f5c24b] px-5 py-2.5 text-sm font-semibold text-black border border-black/10 hover:opacity-90 transition"
+          >
+            {lang === "ur" ? "ڈاؤن لوڈ کریں / Download" : "Download / ڈاؤن لوڈ کریں"}
+          </a>
         </div>
 
         {/* Right: Nav icon */}
