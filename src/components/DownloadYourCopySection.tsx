@@ -15,7 +15,7 @@ export default function DownloadYourCopySection() {
         "Read Salawat al-Arbain with Urdu translation and explanation.",
       nativeDescription:
         "صلوات الاربعین اردو ترجمہ اور وضاحت کے ساتھ پڑھیں۔",
-      url: "https://archive.org/details/YOUR_URDU_BOOK_URL",
+      url: "https://archive.org/details/MiladNamaHazratSyedAbdullahShahNaqshbandiQuadriRh",
       color: "from-[#007a43] to-[#005c31]",
       border: "border-emerald-300/30",
     },
@@ -27,7 +27,7 @@ export default function DownloadYourCopySection() {
         "Read Salawat al-Arbain with English translation and explanation.",
       nativeDescription:
         "Read Salawat al-Arbain with English translation and explanation.",
-      url: "https://archive.org/details/YOUR_ENGLISH_BOOK_URL",
+      url: "https://archive.org/details/KitabUlMuhabbatAAbdullahShahSahab",
       color: "from-[#0f766e] to-[#064e3b]",
       border: "border-teal-300/30",
     },
@@ -39,7 +39,7 @@ export default function DownloadYourCopySection() {
         "Read Salawat al-Arbain with Hindi translation and explanation.",
       nativeDescription:
         "हिंदी अनुवाद और व्याख्या के साथ सलावत अल-अरबईन पढ़ें।",
-      url: "https://archive.org/details/YOUR_HINDI_BOOK_URL",
+      url: "https://archive.org/details/GulzarEAuliyaAbdullahShahSahab",
       color: "from-[#b7791f] to-[#005c31]",
       border: "border-yellow-300/30",
     },
@@ -68,7 +68,7 @@ export default function DownloadYourCopySection() {
           <p className="mt-6 text-white text-3xl md:text-4xl font-urdu">
             کتاب ڈاؤن لوڈ کریں
           </p>
-          
+
         </div>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
