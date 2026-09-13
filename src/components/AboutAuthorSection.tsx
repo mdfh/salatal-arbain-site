@@ -26,7 +26,7 @@ export default function AboutAuthorSection() {
                 INTRODUCTION
               </p>
               <p className="mt-5 text-base leading-relaxed text-black/70 font-en">
-                This book comprises of Durood  derived from the work Shawāriq al-Anwār authored by Shaykh al-Sayyid Muhammad ibn ʿAlawī al-Mālikī al-Ḥasanī
+                This book comprises of Durood derived from the work Shawāriq al-Anwār authored by Shaykh al-Sayyid Muhammad ibn ʿAlawī al-Mālikī al-Ḥasanī (Makki) may Allah have mercy upon him.
               </p>
               <p className="mt-5 text-base leading-relaxed text-black/70 font-en">
                 This humble servant has presented this compilation along with its translation as a modest effort, with the aim that readers may become fully acquainted with the meanings and messages of these priceless blessings, so that their hearts may be filled with the remembrance of the Rasoolallah ﷺ and illuminated with love for Him ﷺ .</p>
@@ -51,7 +51,7 @@ export default function AboutAuthorSection() {
                 dir="rtl"
                 className="mt-5 text-base leading-relaxed text-black/70 text-right font-urdu-p font-normal"
               >
-یہ  درود کا مجموعہ ، شیخ السید محمد بن علوی المالکی الحسنی الملکی کی کتاب شوارق الانوار سے اقز کردہ درودوں پر مشتمل ہے۔  
+                یہ درود کا مجموعہ ، شیخ السید محمد بن علوی المالکی الحسنی (مکی) رحمت اللہ تعلی علیہ کی کتاب شوارق الانوار سے اقز کردہ درودوں پر مشتمل ہے۔  
 
               </p>
 
