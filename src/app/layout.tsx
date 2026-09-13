@@ -22,30 +22,30 @@ const baskervville = Baskervville({
 
 export const metadata: Metadata = {
   title: {
-    default: "Salatal Arbain – 40 Durood on Prophet Muhammad (ﷺ)",
-    template: "%s | Salatal Arbain",
+    default: "Salawat Al Muhibbeen – Duroods on Prophet Muhammad (ﷺ)",
+    template: "%s | Salawat Al Muhibbeen",
   },
   description:
-    "Explore Salatal Arbain, a collection of 40 beautiful durood (salutations) upon Prophet Muhammad (ﷺ). A spiritual guide for daily recitation and blessings.",
+    "Explore Salawat Al Muhibbeen, a collection of beautiful durood (salutations) upon Prophet Muhammad (ﷺ). A spiritual guide for daily recitation and blessings.",
   keywords: [
-    "Salatal Arbain",
+    "Salawat Al Muhibbeen",
     "40 Durood",
     "Durood Sharif",
     "Salawat on Prophet Muhammad",
     "Islamic supplications",
     "Darood collection",
   ],
-  authors: [{ name: "Salatal Arbain" }],
-  creator: "Salatal Arbain",
-  metadataBase: new URL("https://salatal-arbain.netlify.app"),
+  authors: [{ name: "Salawat Al Muhibbeen" }],
+  creator: "Salawat Al Muhibbeen",
+  metadataBase: new URL("https://salawat-al-muhibbeen.com"),
   openGraph: {
-    title: "Salatal Arbain",
+    title: "Salawat Al Muhibbeen",
     description:
       "A collection of 40 durood (salawat) upon Prophet Muhammad (ﷺ) for spiritual growth and blessings.",
-    url: "https://salatal-arbain.netlify.app",
-    siteName: "Salatal Arbain",
+    url: "https://salawat-al-muhibbeen.com",
+    siteName: "Salawat Al Muhibbeen",
     images: [
-      { url: "/og-image.png", width: 1200, height: 630, alt: "Salatal Arbain" },
+      { url: "/og-image.png", width: 1200, height: 630, alt: "Salawat Al Muhibbeen" },
     ],
     locale: "en_US",
     type: "website",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   icons: { icon: "/favicon.svg" },
   twitter: {
     card: "summary_large_image",
-    title: "Salatal Arbain",
+    title: "Salawat Al Muhibbeen",
     description:
       "Read and reflect on 40 durood (salawat) upon Prophet Muhammad (ﷺ).",
     images: ["/og-image.png"],
