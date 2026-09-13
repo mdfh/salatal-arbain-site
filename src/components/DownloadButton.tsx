@@ -3,9 +3,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { useLang } from "@/components/LangProvider";
 import { track } from "@/lib/firebase";
-import { downloadFromStorage } from "@/lib/storageDownload";
-import { downloadFromPublic } from "@/lib/publicDownload";
-import { incrementDownloadCount } from "@/lib/downloadCounter";
 import { ArrowRight, ShieldCheck, X } from "lucide-react";
 
 type DownloadButtonProps = {
@@ -37,7 +34,7 @@ export default function DownloadButton({
   const captchaEnabled = false; //Boolean(siteKey);
 
   // --- Public files (Netlify/Next public folder) ---
-  const publicHref = "/pdf/salawatal-arbain.pdf";
+  const publicHref = "pdf/salawatal-arbain.pdf";
 
   // --- Firebase Storage paths (keep for later) ---
   const storagePath =
