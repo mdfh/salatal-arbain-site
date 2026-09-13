@@ -20,6 +20,11 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+To re-deploy after pushing changes, simply run following command after logging into VM:
+```bash
+cd /var/www/tajweed && git pull && npm install && npm run build && pm2 restart tajweed
+```
+
 ## Next.js VPS Deployment Guide
 
 This guide documents the full setup used to deploy multiple Next.js applications on a Linux VPS using:
